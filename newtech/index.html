@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewTech Computers & Accessories | Order Form</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>NewTech Computers &amp; Accessories</h1>
+    <p>Complete the form below to place your order. All fields marked with <strong>*</strong> are required.</p>
+  </header>
+
+  <hr>
+
+  <main>
+    <form action="#" method="post">
+
+      <!-- SECTION 1: CUSTOMER PERSONAL INFORMATION -->
+      <fieldset>
+        <legend>Customer Personal Information</legend>
+
+        <label for="firstname">First Name *</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+        <br><br>
+
+        <label for="lastname">Last Name *</label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+        <br><br>
+
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="gender">Gender *</label><br>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select Gender --</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Prefer not to say</option>
+        </select>
+        <br><br>
+
+        <label for="password">Account Password *</label><br>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        <br><br>
+
+      </fieldset>
+
+      <br>
+
+      <!-- SECTION 2: CONTACT INFORMATION -->
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="email">Email Address *</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        <br><br>
+
+        <label for="phone">Phone Number *</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" required>
+        <br><br>
+
+        <label for="altphone">Alternative Phone Number</label><br>
+        <input type="tel" id="altphone" name="altphone" placeholder="+254 700 000 000">
+        <br><br>
+
+        <label for="address">Physical Address *</label><br>
+        <textarea id="address" name="address" rows="3" cols="40" placeholder="Enter your street address" required></textarea>
+        <br><br>
+
+        <label for="city">City *</label><br>
+        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+        <br><br>
+
+      </fieldset>
+
+      <br>
+
+      <!-- SECTION 3: PRODUCT SELECTION -->
+      <fieldset>
+        <legend>Product Selection</legend>
+
+        <label for="category">Product Category *</label><br>
+        <select id="category" name="category" required>
+          <option value="">-- Select Category --</option>
+          <option value="laptop">Laptop</option>
+          <option value="desktop">Desktop Computer</option>
+          <option value="monitor">Monitor</option>
+          <option value="keyboard">Keyboard</option>
+          <option value="mouse">Mouse</option>
+          <option value="printer">Printer</option>
+          <option value="accessories">Other Accessories</option>
+        </select>
+        <br><br>
+
+        <label for="product">Product Name / Model *</label><br>
+        <input type="text" id="product" name="product" placeholder="e.g. HP Pavilion 15, Logitech MX Keys" required>
+        <br><br>
+
+        <label for="quantity">Quantity *</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" value="1" required>
+        <br><br>
+
+        <label for="specs">Special Requirements or Specifications</label><br>
+        <textarea id="specs" name="specs" rows="4" cols="40" placeholder="e.g. Preferred color, RAM size, storage capacity"></textarea>
+        <br><br>
+
+      </fieldset>
+
+      <br>
+
+      <!-- SECTION 4: DELIVERY DETAILS -->
+      <fieldset>
+        <legend>Delivery Details</legend>
+
+        <p>Delivery Method *</p>
+
+        <input type="radio" id="delivery_home" name="delivery" value="home" required>
+        <label for="delivery_home">Home Delivery</label>
+        <br>
+
+        <input type="radio" id="delivery_pickup" name="delivery" value="pickup">
+        <label for="delivery_pickup">Pick Up from Store</label>
+        <br>
+
+        <input type="radio" id="delivery_office" name="delivery" value="office">
+        <label for="delivery_office">Office Delivery</label>
+        <br><br>
+
+        <label for="delivery_address">Delivery Address (if different from contact address)</label><br>
+        <textarea id="delivery_address" name="delivery_address" rows="3" cols="40" placeholder="Enter delivery address"></textarea>
+        <br><br>
+
+        <label for="delivery_date">Preferred Delivery Date</label><br>
+        <input type="date" id="delivery_date" name="delivery_date">
+        <br><br>
+
+        <label for="delivery_notes">Delivery Notes</label><br>
+        <input type="text" id="delivery_notes" name="delivery_notes" placeholder="e.g. Call before delivery, leave at gate">
+        <br><br>
+
+      </fieldset>
+
+      <br>
+
+      <!-- SECTION 5: PAYMENT PREFERENCES -->
+      <fieldset>
+        <legend>Payment Preferences</legend>
+
+        <p>Select your preferred payment method *</p>
+
+        <input type="radio" id="mpesa" name="payment" value="mpesa" required>
+        <label for="mpesa">M-Pesa</label>
+        <br>
+
+        <input type="radio" id="paypal" name="payment" value="paypal">
+        <label for="paypal">PayPal</label>
+        <br>
+
+        <input type="radio" id="banking" name="payment" value="banking">
+        <label for="banking">Online Banking</label>
+        <br><br>
+
+        <label for="mpesa_number">M-Pesa Number (if applicable)</label><br>
+        <input type="tel" id="mpesa_number" name="mpesa_number" placeholder="+254 700 000 000">
+        <br><br>
+
+        <label for="paypal_email">PayPal Email (if applicable)</label><br>
+        <input type="email" id="paypal_email" name="paypal_email" placeholder="yourpaypal@email.com">
+        <br><br>
+
+        <label for="bank_name">Bank Name (if applicable)</label><br>
+        <input type="text" id="bank_name" name="bank_name" placeholder="e.g. Equity Bank, KCB">
+        <br><br>
+
+      </fieldset>
+
+      <br>
+
+      <!-- TERMS AND SUBMIT -->
+      <fieldset>
+        <legend>Terms &amp; Confirmation</legend>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="https://2509839-collab.github.io/ASSIGNMENT-1/conditions/">Terms and Conditions</a> of NewTech Computers &amp; Accessories *</label>
+        <br><br>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to our newsletter for deals and updates</label>
+        <br><br>
+
+        <input type="reset" value="Clear Form">
+        &nbsp;&nbsp;
+        <input type="submit" value="Place Order">
+
+      </fieldset>
+
+    </form>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 NewTech Computers &amp; Accessories | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
